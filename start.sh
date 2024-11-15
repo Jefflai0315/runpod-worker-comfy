@@ -15,7 +15,7 @@ if [ -f "/workspace/venv/bin/activate" ]; then
 
     # Serve the API and don't shutdown the container
     if [ "$SERVE_API_LOCALLY" == "true" ]; then
-        echo "runpod-worker-comfy: Starting ComfyUI"
+        echo "runpod-worker-comfy: Starting ComfyUI, Serve Locally"
         python3 /workspace/comfyui/main.py --disable-auto-launch --disable-metadata --listen &
 
         echo "runpod-worker-comfy: Starting RunPod Handler"
